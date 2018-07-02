@@ -1,0 +1,14 @@
+{
+  "name": "apollo-config",
+  "version": "1.0.1",
+  "description": "load config from apollo and write into json file",
+  "main": "index.js",
+  "repository": "git@",
+  "author": "JustinChou<zhou78620051@126.com>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "got": "^8.3.1"
+  }
+}
