@@ -1,9 +1,9 @@
 {
   "name": "apollo-config",
   "version": "1.0.1",
-  "description": "load config from apollo and write into json file",
+  "description": "load config from apollo and return the json object",
   "main": "index.js",
-  "repository": "git@",
+  "repository": "https://github.com/justinchou/apollo-config.git",
   "author": "JustinChou<zhou78620051@126.com>",
   "license": "MIT",
   "private": false,
