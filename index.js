@@ -30,7 +30,7 @@ class ApolloConfig extends EventEmitter {
     this.namespace   = this.config.namespace;
     this.token       = this.config.token;
     
-    this.url    = `http://${this.host}:${this.port}/openapi/v1/envs/${this.env}/apps/${this.appId}/clusters/${this.clusterName}/namespaces/${this.namespace}/releases/latest`
+    this.url         = `http://${this.host}:${this.port}/openapi/v1/envs/${this.env}/apps/${this.appId}/clusters/${this.clusterName}/namespaces/${this.namespace}/releases/latest`
 
     return this;
   }
@@ -59,10 +59,10 @@ class ApolloConfig extends EventEmitter {
     let parsed;
     try {
       parsed = JSON.parse(str);
-      return parsed;
-    } catch (parsedFailed) {
-      return str;
-    }
+      if (parsed && typeof parsed == "object") return parsed;
+    } catch (parsedFailed) {}
+
+    return str;
   }
 
   async loadKvConfig() {

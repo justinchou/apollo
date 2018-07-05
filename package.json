@@ -1,6 +1,6 @@
 {
   "name": "apollo-config",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "load config from apollo and return the json object",
   "main": "index.js",
   "repository": "https://github.com/justinchou/apollo-config.git",
